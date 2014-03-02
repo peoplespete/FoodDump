@@ -1,0 +1,6 @@
+= form_for(@ingredient) do |f|
+  = render 'shared/error_messages', object: f.object
+  = f.label :search
+  = f.text_field :search, placeholder: "Search for your food..."
+  = f.submit "Search", class: "btn btn-large btn-primary"
+

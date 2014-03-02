@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'better_errors'
+gem "bootstrap-sass", "~> 3.1.1.0"
 gem 'capybara', group: [:test]
 gem 'coffee-rails', '~> 4.0.0'
 gem 'factory_girl_rails', '4.2.0', group: [:test]
+gem "figaro", "~> 0.7.0"
 gem 'haml-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
@@ -17,6 +19,7 @@ gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'unicorn'
+gem 'yummly'
 
 group :doc do
   gem 'sdoc', require: false
