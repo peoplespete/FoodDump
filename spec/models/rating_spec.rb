@@ -14,5 +14,29 @@ describe Rating do
 
     it { should be_valid }
 
+    describe "valid rating" do
+      let(:rating) { Rating.new(rating: 52) }
+      subject { rating }
+
+      it { should be_valid }
+    end
+
+    describe "invalid rating" do
+
+      describe "too high" do
+        let(:rating) { Rating.new(rating: 101) }
+        subject { rating }
+
+        it { should_not be_valid }
+      end
+
+      describe "too small" do
+        let(:rating) { Rating.new(rating: -1) }
+        subject { rating }
+
+        it { should_not be_valid }
+      end
+
+    end
   end
 end

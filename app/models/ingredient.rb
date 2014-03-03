@@ -4,7 +4,6 @@ class Ingredient < ActiveRecord::Base
 
 
   def search
-
   end
 
 end
