@@ -1,0 +1,6 @@
+= form_for(@rating) do |f|
+  = render 'shared/error_messages', object: f.object
+  = f.label :scale
+  = f.text_field :scale, placeholder: "Rate your bowel movement..."
+  = f.submit "Save", class: "btn btn-large btn-primary"
+
