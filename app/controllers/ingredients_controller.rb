@@ -15,7 +15,7 @@ class IngredientsController < ApplicationController
     else
       flash[:error] = "Sorry we couldn't find that food, please try again with a different search term"
     end
-      redirect_to new_ingredient_path
+      redirect_to root_url
   end
 
 

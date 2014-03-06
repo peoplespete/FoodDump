@@ -22,7 +22,7 @@ class RatingsController < ApplicationController
       flash[:error] = "Sorry we couldn't add that rating, please try again with a different rating"
     end
 
-    redirect_to new_rating_path
+    redirect_to root_url
   end
 
 
