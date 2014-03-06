@@ -7,7 +7,7 @@ class IngredientsController < ApplicationController
 
   def create
     # go to yummly!
-    recipes = fetch_recipes
+    recipes = fetch_recipes(ingredient_params[:search])
     chosen_recipe = choose_recipe(recipes)
     if chosen_recipe
       add_ingredients_to_database(chosen_recipe.ingredients)

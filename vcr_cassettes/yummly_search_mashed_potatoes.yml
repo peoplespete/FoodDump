@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yummly.com/v1/api/recipes?_app_id=8f303a51&_app_key=aff06d00c9a604466f6f1cd0e42927c7&q=Mashed%20Potatoes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 06 Mar 2014 16:44:44 GMT
+      Server:
+      - nginx
+      X-Yummly-Request-Id:
+      - 8de8aa89-2145-41f1-ae54-f962958d14d1
+      Content-Length:
+      - '2332'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"attribution\":{\"html\":\"Recipe search powered by <a href='http://www.yummly.com/recipes'><img
+        alt='Yummly' src='http://static.yummly.com/api-logo.png'/></a>\",\"url\":\"http://www.yummly.com/recipes/\",\"text\":\"Recipe
+        search powered by Yummly\",\"logo\":\"http://static.yummly.com/api-logo.png\"},\"totalMatchCount\":5167,\"facetCounts\":{},\"matches\":[{\"smallImageUrls\":[\"http://lh6.ggpht.com/YyQSPanacARdyVmcSrniVE38hMCLVEx6P3_ufOifVyBa7KFmPZknH9SuKio3c7lWUiT0GwhnjtlXItJfiVGQpQ=s90\"],\"ingredients\":[\"salted
+        butter\",\"fresh chives\",\"potatoes\",\"salt\"],\"flavors\":{\"sour\":0.5,\"salty\":0.3333333333333333,\"sweet\":0.16666666666666666,\"meaty\":0.3333333333333333,\"bitter\":0.16666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh6.ggpht.com/9tGqhJXYqEfDFml4Cwu-Fy7NmoYoa-4XCw72IpxwoYSL_t5eVknP6ByeVQD96brND7CQ9k3KTzHJ-QqegF6jY0M=s90-c\"},\"attributes\":{},\"totalTimeInSeconds\":3300.0,\"rating\":5,\"recipeName\":\"Very
+        Best Mashed Potatoes\",\"sourceDisplayName\":\"Steamy Kitchen\",\"id\":\"Very-Best-Mashed-Potatoes-513682\"},{\"smallImageUrls\":[\"http://lh3.ggpht.com/RxytW_IbRSDahJLuqqzcHix-CZYeqY1nDFLlgjM9q9Eb4UGL_sl3h2S3pAL6fUkl5uBFhTDk2AsvY1UvCt5sG54=s90\"],\"ingredients\":[\"chopped
+        fresh chives\",\"heavy cream\",\"italian parsley leaves\",\"kosher salt\",\"unsalted
+        butter\",\"red potato\",\"ground black pepper\"],\"flavors\":{\"sour\":0.3333333333333333,\"salty\":0.16666666666666666,\"sweet\":0.16666666666666666,\"meaty\":0.5,\"bitter\":0.16666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh3.ggpht.com/NQdcvVYnId5qDA_LVfGzCUc_KYPOhKyoheCAzZv3_GXjK6tgzWvC1uI4t2ta0oBqMpEgGY6zkfFv99Cu_8Clzg=s90-c\"},\"attributes\":{},\"totalTimeInSeconds\":2100.0,\"rating\":0,\"recipeName\":\"Mashed
+        Red Potatoes\",\"sourceDisplayName\":\"Chow\",\"id\":\"Mashed-Red-Potatoes-507137\"},{\"smallImageUrls\":[\"http://lh4.ggpht.com/L4co34Bst6m8bkGgGKX01wtbjk_QUQJJtPHtfxnEUvdgyCrv3ZhBd3_v-8RRwhvwmjrcXOivr9m5tRgNvbMX=s90\"],\"ingredients\":[\"butter\",\"fresh
+        chives\",\"red potato\",\"miso\",\"milk\"],\"flavors\":{\"sour\":0.16666666666666666,\"salty\":1.0,\"sweet\":0.3333333333333333,\"meaty\":0.3333333333333333,\"bitter\":0.6666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh4.ggpht.com/-lMgCoLWJQ6_tJxdQtUu5JsXzECbcwzQTxN5KXDqgn6vWrJP8C0hljRp_aiLTixvMZphNxeef-UPi2Lny52E1g=s90-c\"},\"attributes\":{},\"totalTimeInSeconds\":2700.0,\"rating\":5,\"recipeName\":\"Miso
+        Mashed Potatoes\",\"sourceDisplayName\":\"Steamy Kitchen\",\"id\":\"Miso-Mashed-Potatoes-513667\"},{\"smallImageUrls\":[\"http://lh5.ggpht.com/3nRXuF5YSgEmCWcT23M-hcE6U63K1fHiek0Kck6L6Uo_bpA__X8Owr8bwUp7BOunoNINUtQQEDZ7iynWPCkKnA=s90\"],\"ingredients\":[\"butter\",\"fresh
+        chives\",\"red potato\",\"miso\",\"milk\"],\"flavors\":{\"sour\":0.16666666666666666,\"salty\":1.0,\"sweet\":0.3333333333333333,\"meaty\":0.3333333333333333,\"bitter\":0.6666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/oLMWoWHTbkS70Y5dM9FGcRiPWY3RMPNpBOUvvHX_JLqoUa0vNKYyeXobtWSvE5KYnDqJmxTJFDUdUxQ3yW6E8sU=s90-c\"},\"attributes\":{},\"totalTimeInSeconds\":2700.0,\"rating\":5,\"recipeName\":\"Miso
+        Mashed Potatoes\",\"sourceDisplayName\":\"Steamy Kitchen\",\"id\":\"Miso-Mashed-Potatoes-513645\"},{\"smallImageUrls\":[\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Luxurious-Mashed-Potatoes-Martha-Stewart-108534.s.png\"],\"ingredients\":[\"yukon
+        gold potatoes\",\"coarse salt\",\"heavy cream\",\"unsalted butter\",\"ground
+        pepper\"],\"flavors\":{\"sour\":0.5,\"salty\":0.16666666666666666,\"meaty\":0.5,\"bitter\":0.6666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh6.ggpht.com/9EStF-E2ViA5eRhPo54Gu8_YTCk16DXLVub4nZNU5VmE-Zd5VDCfL0dJjkho6V8e6FwSiPBE3axdSW3rWbZBgRo=s90-c\"},\"attributes\":{},\"totalTimeInSeconds\":2700.0,\"rating\":4,\"recipeName\":\"Luxurious
+        Mashed Potatoes\",\"sourceDisplayName\":\"Martha Stewart\",\"id\":\"Luxurious-Mashed-Potatoes-Martha-Stewart\"},{\"smallImageUrls\":[\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Mashed-potatoes-with-goat-cheese-_-kale-306312-269663.s.jpg\"],\"ingredients\":[\"whole
+        milk\",\"garlic\",\"kale\",\"unsalted butter\",\"potatoes\",\"salt\",\"goat
+        cheese\"],\"flavors\":null,\"imageUrlsBySize\":{\"90\":\"http://lh4.ggpht.com/L3_cCQ48aj0RhRf42MjaOJ2tNn-qkbxA1Xx3VdGVwY2V890XdUaUT5ykighwZDaJeslr1gSE3fo2RWjm3zpS6mg=s90-c\"},\"attributes\":{},\"totalTimeInSeconds\":3000.0,\"rating\":5,\"recipeName\":\"Mashed
+        Potatoes with Goat Cheese & Kale\",\"sourceDisplayName\":\"Food Republic\",\"id\":\"Mashed-potatoes-with-goat-cheese-_-kale-306312\"},{\"smallImageUrls\":[\"http://lh3.ggpht.com/HaYEICSn6vM4kyJkuLip1aox_UFbMLQ0GlJn7aqHlldMs5vCtUc8b4vMCd6DUu5XyMrmC3bUwZfbN1ypYkpGxjc=s90\"],\"ingredients\":[\"salted
+        butter\",\"fresh chives\",\"potatoes\",\"salt\"],\"flavors\":{\"sour\":0.5,\"salty\":0.3333333333333333,\"sweet\":0.16666666666666666,\"meaty\":0.3333333333333333,\"bitter\":0.16666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/LlB5e2En5bFlst9r6LmYl4RCmjAuhjPK9HwuWqrM72lHM25efG_GrlYxI69RghptN_FN50yVhmqn3ExOV2krVw=s90-c\"},\"attributes\":{},\"totalTimeInSeconds\":3300.0,\"rating\":5,\"recipeName\":\"Very
+        Best Mashed Potatoes\",\"sourceDisplayName\":\"Steamy Kitchen\",\"id\":\"Very-Best-Mashed-Potatoes-512364\"},{\"smallImageUrls\":[\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Mashed-Potatoes-Martha-Stewart_3-110818.s.png\",\"http://yummly-recipeimages-2.s3.amazonaws.com/Mashed-Potatoes-Martha-Stewart_3.s.png\"],\"ingredients\":[\"yukon
+        gold potatoes\",\"coarse salt\",\"heavy cream\",\"unsalted butter\",\"freshly
+        ground pepper\"],\"flavors\":{\"sour\":0.8333333333333334,\"salty\":0.16666666666666666,\"meaty\":0.3333333333333333,\"bitter\":0.8333333333333334},\"imageUrlsBySize\":{\"90\":\"http://lh3.ggpht.com/cnHujkAqM6RuW2RwDZsp6zTVS3qdznZ96Pt7HLsMLxPahhpQ_PULreBGfM1EqOp3qwupLYN02WPUj6oW5I5JJA=s90-c\"},\"attributes\":{\"cuisine\":[\"southern\",\"american\"],\"holiday\":[\"christmas\",\"thanksgiving\"]},\"totalTimeInSeconds\":2100.0,\"rating\":3,\"recipeName\":\"Mashed
+        Potatoes\",\"sourceDisplayName\":\"Martha Stewart\",\"id\":\"Mashed-Potatoes-Martha-Stewart_3\"},{\"smallImageUrls\":[\"http://lh6.ggpht.com/cjJD62zGSa-FfKY2DVpPESX49Iy2wDlg8FgKDm0J0cmaVjRITrc1OCDp0X0QW9NN_360y4ohtf_U6RDrFnKK4-I=s90\"],\"ingredients\":[\"russet
+        potatoes\",\"whole milk\",\"herbs\",\"salted butter\"],\"flavors\":{\"sour\":0.3333333333333333,\"salty\":0.16666666666666666,\"sweet\":0.5,\"meaty\":0.3333333333333333,\"bitter\":0.3333333333333333},\"imageUrlsBySize\":{\"90\":\"http://lh4.ggpht.com/8dUvltXlzJcEyi1pcUCxWFv9ZIbfu0sPp6RqovR-g2N36DRQhZWk5pZWV-2KIDAfqI8LGUmpxsBn-ZpYATww=s90-c\"},\"attributes\":{},\"totalTimeInSeconds\":null,\"rating\":5,\"recipeName\":\"Easiest
+        Mashed Potatoes Recipe. Period.\",\"sourceDisplayName\":\"Food Republic\",\"id\":\"Easiest-mashed-potatoes-recipe_-period_-306457\"},{\"smallImageUrls\":[\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Everyday-Mashed-Potatoes-Martha-Stewart-105490.s.png\"],\"ingredients\":[\"yukon
+        gold potatoes\",\"coarse salt\",\"unsalted butter\",\"milk\",\"ground pepper\"],\"flavors\":{\"sour\":0.6666666666666666,\"salty\":0.16666666666666666,\"meaty\":0.16666666666666666,\"bitter\":0.8333333333333334},\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/ydEsdC5EV67KD_MpDFK9BPGNlzr5prBKa0a4jCCDDqpM3MQrtHz7tq363bobqpH48fEI0ALLBfVPBET6Q2S6=s90-c\"},\"attributes\":{},\"totalTimeInSeconds\":2400.0,\"rating\":4,\"recipeName\":\"Everyday
+        Mashed Potatoes\",\"sourceDisplayName\":\"Martha Stewart\",\"id\":\"Everyday-Mashed-Potatoes-Martha-Stewart\"}],\"criteria\":{\"excludedIngredients\":null,\"allowedIngredients\":null,\"terms\":null}}"
+    http_version: 
+  recorded_at: Thu, 06 Mar 2014 16:44:44 GMT
+recorded_with: VCR 2.8.0

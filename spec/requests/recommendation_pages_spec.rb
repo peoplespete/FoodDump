@@ -1,0 +1,34 @@
+require 'spec_helper'
+require 'vcr_helper'
+
+describe "Recommendation Pages" do
+  before { visit root_url }
+  subject { page }
+
+  describe "getting a recommendation" do
+    before do
+      visit new_ingredient_path
+      fill_in "ingredient_search", with: "Crave-Worthy Sugar Cookies"
+      VCR.use_cassette('yummlysearch Crave-Worthy Sugar Cookies') do
+        click_button "Search"
+      end
+      visit new_rating_path
+      find(:xpath, "//input[@id='rating_scale']").set 57
+      visit new_recommendation_path
+    end
+
+    describe "make yummly search" do
+      before do
+        fill_in "search", with: "Oreo Stuffed Chocolate Chip Cookies"
+        VCR.use_cassette('yummlysearch Oreo Stuffed Chocolate Chip Cookies') do
+          click_button "Search"
+        end
+      end
+
+      it { should have_content("Oreo Stuffed Chocolate Chip Cookies get an eatablity rating of 57") }
+      it { should have_title('Eatability of Oreo Stuffed Chocolate Chip Cookies') }
+
+
+    end
+  end
+end

@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yummly.com/v1/api/recipes?_app_id=8f303a51&_app_key=aff06d00c9a604466f6f1cd0e42927c7&q=Fried%20Apple%20Pie
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 06 Mar 2014 16:45:33 GMT
+      Server:
+      - nginx
+      X-Yummly-Request-Id:
+      - 73ada299-090a-49ac-bbbe-09f0a99304f7
+      Content-Length:
+      - '2595'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"attribution\":{\"html\":\"Recipe search powered by <a href='http://www.yummly.com/recipes'><img
+        alt='Yummly' src='http://static.yummly.com/api-logo.png'/></a>\",\"url\":\"http://www.yummly.com/recipes/\",\"text\":\"Recipe
+        search powered by Yummly\",\"logo\":\"http://static.yummly.com/api-logo.png\"},\"totalMatchCount\":81,\"facetCounts\":{},\"matches\":[{\"smallImageUrls\":[\"http://lh4.ggpht.com/OyBbH5fm9qr0ZljzrWrTj-Hxxw-X1FjtcohSeS1VN9YmO57k77f0LLmvq6atpX74yXtPZaltx31bMyvIOIShunA=s90\"],\"ingredients\":[\"butter\",\"light
+        brown sugar\",\"apple cider\",\"heavy cream\",\"ground cinnamon\",\"dough\",\"oil\",\"granny
+        smith apples\",\"graham cracker crumbs\",\"jack daniels\",\"yolk\",\"salt\",\"sugar\",\"all-purpose
+        flour\",\"milk\",\"glucos syrup\",\"vanilla beans\"],\"flavors\":{\"sour\":0.6666666666666666,\"salty\":1.0,\"sweet\":1.0,\"meaty\":0.6666666666666666,\"bitter\":0.6666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh6.ggpht.com/MfwTxE0PNpgSdk6Z3TcGoTGknlRQHuG7n6rwPWKpUIylMuUv_V-lTWPEeOWYlqUBzBZDa7E-3tIRHgaBygXgrA=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"],\"holiday\":[\"fall\"]},\"totalTimeInSeconds\":4500.0,\"rating\":5,\"recipeName\":\"Fried
+        Apple Pie\",\"sourceDisplayName\":\"Food Republic\",\"id\":\"Fried-Apple-Pie-511438\"},{\"smallImageUrls\":[\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Fried-Apple-Pies-Allrecipes-2.s.jpg\",\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Fried-Apple-Pies-Allrecipes-61226.s.png\"],\"ingredients\":[\"ground
+        cinnamon\",\"vegetable oil\",\"salt\",\"all-purpose flour\",\"apples\",\"cold
+        water\",\"shortening\",\"white sugar\"],\"flavors\":{\"sour\":0.6666666666666666,\"salty\":0.0,\"sweet\":0.8333333333333334,\"meaty\":0.6666666666666666,\"bitter\":0.16666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh3.ggpht.com/OgcI9p-yycBzCgDhWAXq2-GS349ry0HO49GcZPHzpwfTXR0UApwgS-AvLFhsxH0KwF-dtclFILk1KhypGLymFA=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"],\"cuisine\":[\"southern\"]},\"totalTimeInSeconds\":3300.0,\"rating\":5,\"recipeName\":\"Fried
+        Apple Pies\",\"sourceDisplayName\":\"AllRecipes\",\"id\":\"Fried-Apple-Pies-Allrecipes\"},{\"smallImageUrls\":[\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Low-sugar-and-flourless-apple-cranberry-crumble-309656-274109.s.jpg\"],\"ingredients\":[\"almond
+        meal\",\"butter\",\"oatmeal\",\"ground cinnamon\",\"dried cranberries\",\"apple
+        pie spice\",\"splenda\",\"apples\"],\"flavors\":null,\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/Ag8o7C6ZmetrPcK44eLdcnAiJ_SKMNgNz4-nmklrc1mHD9A4qVsGCT7A6Xg_S3gPLQW9ug4qFRBE221kyrhOwxQ=s90-c\"},\"attributes\":{\"holiday\":[\"fall\"]},\"totalTimeInSeconds\":2700.0,\"rating\":5,\"recipeName\":\"Low
+        Sugar and Flourless Apple Cranberry Crumble\",\"sourceDisplayName\":\"Kalyn's
+        Kitchen\",\"id\":\"Low-sugar-and-flourless-apple-cranberry-crumble-309656\"},{\"attributes\":{\"course\":[\"Desserts\"],\"cuisine\":[\"american\"]},\"flavors\":{\"sour\":0.3333333333333333,\"salty\":0.16666666666666666,\"sweet\":1.0,\"meaty\":0.16666666666666666,\"bitter\":0.16666666666666666},\"rating\":5,\"id\":\"Apple-Fried-Pies-Food-Network\",\"smallImageUrls\":[],\"sourceDisplayName\":\"Food
+        Network\",\"totalTimeInSeconds\":6600.0,\"ingredients\":[\"butter\",\"mcintosh
+        apples\",\"cinnamon\",\"lemon juice\",\"biscuit dough\",\"sugar\"],\"recipeName\":\"Apple
+        Fried Pies\"},{\"smallImageUrls\":[\"http://lh6.ggpht.com/hG1tcjbltA_uRHQT4L-hW34LhhbVXWJKrDM3Ag01I9AFPAriOHO5lh6W5gk28-9gitarmiCXuMSwJceMTxkzvw=s90\"],\"ingredients\":[\"light
+        brown sugar\",\"flour\",\"tart apples\",\"unsalted butter\",\"biscuit dough\",\"bourbon\",\"vegetable
+        shortening\",\"vanilla beans\"],\"flavors\":{\"sour\":0.3333333333333333,\"salty\":0.16666666666666666,\"sweet\":0.8333333333333334,\"meaty\":0.6666666666666666,\"bitter\":0.16666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/RKbuh6qHA7wtXFbaeu7aiq0DxmeIhUJ29Gj-s0rS5BpCi25sQ6f_jVuqNdN1t-JQ7tB4OhP8xQUfS5fJ3EJ9=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"],\"holiday\":[\"fall\"]},\"totalTimeInSeconds\":7200.0,\"rating\":0,\"recipeName\":\"Fried
+        Apple Pies with Vanilla Bean and Bourbon\",\"sourceDisplayName\":\"Love and
+        Olive Oil\",\"id\":\"Fried-Apple-Pies-with-Vanilla-Bean-and-Bourbon-489237\"},{\"smallImageUrls\":[\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Apple-hand-pies-343908-303140.s.jpg\"],\"ingredients\":[\"garnish\",\"powdered
+        sugar\",\"cinnamon\",\"oil\",\"salt\",\"sugar\",\"all-purpose flour\",\"apples\",\"cold
+        water\",\"shortening\"],\"flavors\":null,\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/W4K1UkrtFYMihfwGUnhiOdFiKDpnOf20xrZBzQSmCxEuvsNK8zvj9jFJmwB8AkUPg0TY54BbJjzTYqESB8XX=s90-c\"},\"attributes\":{},\"totalTimeInSeconds\":2400.0,\"rating\":3,\"recipeName\":\"Apple
+        Hand Pies\",\"sourceDisplayName\":\"MyRecipes\",\"id\":\"Apple-hand-pies-343908\"},{\"smallImageUrls\":[\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Low-sugar-pumpkin-and-apple-crumble-309641-274094.s.jpg\"],\"ingredients\":[\"almond
+        meal\",\"butter\",\"pumpkin pie spice\",\"flour\",\"ground cinnamon\",\"dried
+        cranberries\",\"butternut squash\",\"splenda\",\"rolled oats\",\"apples\"],\"flavors\":null,\"imageUrlsBySize\":{\"90\":\"http://lh4.ggpht.com/xHWbDsWunYOqD-6Sjis2Nimsy3pAJ-6DQ2UZa8WTtfHrRmcfisjkGxYpj6XjampUnXOQCTvCXajSJBfJjBMbUg=s90-c\"},\"attributes\":{\"holiday\":[\"fall\",\"thanksgiving\"]},\"totalTimeInSeconds\":3300.0,\"rating\":5,\"recipeName\":\"Low-Sugar
+        Pumpkin and Apple Crumble\",\"sourceDisplayName\":\"Kalyn's Kitchen\",\"id\":\"Low-sugar-pumpkin-and-apple-crumble-309641\"},{\"smallImageUrls\":[\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Fried-Apple-Pies-Epicurious-53315-48963.s.png\"],\"ingredients\":[\"light
+        brown sugar\",\"ice water\",\"baking powder\",\"apple cider\",\"confectioners
+        sugar\",\"eggs\",\"cinnamon\",\"unsalted butter\",\"vegetable oil\",\"dried
+        apple\",\"salt\",\"water\",\"all-purpose flour\",\"fat\",\"grated lemon zest\",\"vegetable
+        shortening\"],\"flavors\":{\"sour\":0.5,\"salty\":0.0,\"sweet\":0.5,\"meaty\":1.0,\"bitter\":0.16666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/IjQ8NqsRwyxBH8sTRX9136YsA0sCRw4kEmtrWa-D_sHPzpfAcjtLUkRtIcJlrg0c-G7L3EVnJEwnFyDlgGpJRA=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"],\"cuisine\":[\"southern\",\"american\"]},\"totalTimeInSeconds\":10800.0,\"rating\":5,\"recipeName\":\"Fried
+        Apple Pies\",\"sourceDisplayName\":\"Epicurious\",\"id\":\"Fried-Apple-Pies-Epicurious-53315\"},{\"smallImageUrls\":[\"http://lh6.ggpht.com/OBRC2dKkXzO_RIDtA14okrLjen-w1MMT_UMjnDd1kg4ilyWhlcuhdze543PLodEa3a2C2_Jt86vTbGrO31AEKQ=s90\",\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Cider-doughnuts-holes-348518-313168.s.jpg\"],\"ingredients\":[\"pumpkin
+        pie spice\",\"baking powder\",\"apple cider\",\"flour\",\"eggs\",\"unsalted
+        butter\",\"pure vanilla extract\",\"salt\",\"sugar\",\"ground cloves\",\"buttermilk\",\"vegetable
+        shortening\"],\"flavors\":{\"sour\":0.5,\"salty\":0.6666666666666666,\"sweet\":1.0,\"meaty\":0.3333333333333333,\"bitter\":0.5},\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/zRuawuTHzNGd-k2DMsLeSu9Vz3przhkASCBRoZIL2-V-pWhkA4EyKMyNo2oBKj24fKnIrFKYd6w_wJRZY2XKoA=s90-c\"},\"attributes\":{\"course\":[\"Breads\"],\"holiday\":[\"fall\"]},\"totalTimeInSeconds\":2400.0,\"rating\":5,\"recipeName\":\"Cider
+        Doughnuts Holes\",\"sourceDisplayName\":\"EveryDay with Rachael Ray\",\"id\":\"Cider-doughnuts-holes-348518\"},{\"smallImageUrls\":[\"http://lh5.ggpht.com/sk2McrLQAyG7tUMqcExPLETzDMwluCBItg4X-krCeit8CfqN8JSY-yI-gRx7zIcImFL8E8T8Ovkcx0pLqejr=s90\"],\"ingredients\":[\"self
+        rising flour\",\"fresh lemon juice\",\"light brown sugar\",\"cinnamon sugar\",\"table
+        salt\",\"ground cinnamon\",\"vegetable oil\",\"dried apple\",\"granulated
+        sugar\",\"buttermilk\",\"shortening\"],\"flavors\":{\"sour\":0.6666666666666666,\"salty\":1.0,\"sweet\":0.8333333333333334,\"meaty\":0.5,\"bitter\":0.6666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/pECM-bgPNQ-ocvayWN50W6zeweBbPNUkojbjHWA8z4WxxgXh1v0WT1Ku6YbAIBXp1b4kxcVc_J0VZQ8sCvnig3k=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"],\"cuisine\":[\"southern\",\"american\"]},\"totalTimeInSeconds\":51480.0,\"rating\":4,\"recipeName\":\"Fried
+        Apple Pies\",\"sourceDisplayName\":\"MyRecipes\",\"id\":\"Fried-Apple-Pies-374632\"}],\"criteria\":{\"excludedIngredients\":null,\"allowedIngredients\":null,\"terms\":null}}"
+    http_version: 
+  recorded_at: Thu, 06 Mar 2014 16:45:33 GMT
+recorded_with: VCR 2.8.0

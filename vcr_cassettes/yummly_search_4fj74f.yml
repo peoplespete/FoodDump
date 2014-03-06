@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yummly.com/v1/api/recipes?_app_id=8f303a51&_app_key=aff06d00c9a604466f6f1cd0e42927c7&q=4fj74f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 06 Mar 2014 16:45:48 GMT
+      Server:
+      - nginx
+      X-Yummly-Request-Id:
+      - ceedec40-94e5-443e-bd06-e381d447536c
+      Content-Length:
+      - '249'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"attribution\":{\"html\":\"Recipe search powered by <a href='http://www.yummly.com/recipes'><img
+        alt='Yummly' src='http://static.yummly.com/api-logo.png'/></a>\",\"url\":\"http://www.yummly.com/recipes/\",\"text\":\"Recipe
+        search powered by Yummly\",\"logo\":\"http://static.yummly.com/api-logo.png\"},\"totalMatchCount\":0,\"facetCounts\":{},\"matches\":[],\"criteria\":{\"excludedIngredients\":null,\"allowedIngredients\":null,\"terms\":null}}"
+    http_version: 
+  recorded_at: Thu, 06 Mar 2014 16:45:48 GMT
+recorded_with: VCR 2.8.0

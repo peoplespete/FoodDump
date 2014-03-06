@@ -6,7 +6,7 @@ FoodDump::Application.routes.draw do
   root 'welcome#index'
   resources :ingredients, only: [:new, :create]
   resources :ratings, only: [:new, :create]
-  resources :recommendations, only: [:index]
+  resources :recommendations, only: [:new, :create, :index]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

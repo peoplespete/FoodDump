@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yummly.com/v1/api/recipes?_app_id=8f303a51&_app_key=aff06d00c9a604466f6f1cd0e42927c7&q=Oreo%20Stuffed%20Chocolate%20Chip%20Cookies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 06 Mar 2014 22:38:39 GMT
+      Server:
+      - nginx
+      X-Yummly-Request-Id:
+      - ab158a96-7475-4518-8b0e-1b40447b916d
+      Content-Length:
+      - '2939'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"attribution\":{\"html\":\"Recipe search powered by <a href='http://www.yummly.com/recipes'><img
+        alt='Yummly' src='http://static.yummly.com/api-logo.png'/></a>\",\"url\":\"http://www.yummly.com/recipes/\",\"text\":\"Recipe
+        search powered by Yummly\",\"logo\":\"http://static.yummly.com/api-logo.png\"},\"totalMatchCount\":9,\"facetCounts\":{},\"matches\":[{\"smallImageUrls\":[\"http://lh4.ggpht.com/hIBRHsiTkpL-mSuD9eaNCHhHvMwaNg6r-a5ohRmdvko5BiPui6lI-FlzulwJQsTtXS11oSypHRkFolkAA5DT=s90\",\"http://lh3.ggpht.com/4UqaRymGKnNxL1383pdgAByK2-N9L7n4IJZnCn9LdjfYI-MSxtf3zoLy_M3JRJjrSi6I8qeZfKg2Yh3DrlWZn24=s90\",\"http://lh4.ggpht.com/WC61YiOja_yViIsBfSmC6aExLh64nylz4Pwug3ggUJLuX_-R8alSXUVSKImKUJlB7I4bQsDuf2ki2GZOQkbJ=s90\",\"http://lh6.ggpht.com/YFFS582Er53GW-ZJsRiY4cLRWX1fVgVXKtXV33yTqZnRCTyYwfvIQiU5G9Kf5IzkR1xtN4ZSGcFlOO8FQH3KNw=s90\"],\"ingredients\":[\"light
+        brown sugar\",\"baking soda\",\"chocolate chips\",\"softened butter\",\"kosher
+        salt\",\"pure vanilla\",\"large eggs\",\"granulated sugar\",\"all-purpose
+        flour\",\"Oreo Cookies\"],\"flavors\":{\"sour\":0.6666666666666666,\"salty\":0.6666666666666666,\"sweet\":1.0,\"meaty\":0.6666666666666666,\"bitter\":1.0},\"imageUrlsBySize\":{\"90\":\"http://lh4.ggpht.com/-Xj8r0KTP-qGU4nYJFLSZbG8OYZw7KIacdYWsgxRqrS6VlQASXkyUw0qKk3HH5_S5sicDu7ZlgrKmpajzbSJ=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"]},\"totalTimeInSeconds\":null,\"rating\":5,\"recipeName\":\"Oreo
+        Stuffed Chocolate Chip Cookies\",\"sourceDisplayName\":\"Picky Palate\",\"id\":\"Sanjeeta-kk-334780\"},{\"smallImageUrls\":[\"http://yummly-recipeimages-compressed.s3.amazonaws.com/Oreo-Stuffed-Chocolate-Chip-Cookies-MyRecipes-240265-128535.s.png\"],\"ingredients\":[\"light
+        brown sugar\",\"baking soda\",\"chocolate chips\",\"softened butter\",\"large
+        eggs\",\"salt\",\"granulated sugar\",\"all-purpose flour\",\"vanilla\",\"oreo
+        cookies\"],\"flavors\":{\"sour\":0.6666666666666666,\"salty\":0.6666666666666666,\"sweet\":1.0,\"meaty\":0.6666666666666666,\"bitter\":0.3333333333333333},\"imageUrlsBySize\":{\"90\":\"http://lh4.ggpht.com/8VcltZEY33363IFG_U15S2UVmwp9oUcMKpauh7arGQdjMqLUIvVBhRGP0zOcG8stpXATC-Yqc5ALUVw5kmOD=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"]},\"totalTimeInSeconds\":1800.0,\"rating\":4,\"recipeName\":\"Oreo
+        Stuffed Chocolate Chip Cookies\",\"sourceDisplayName\":\"MyRecipes\",\"id\":\"Oreo-Stuffed-Chocolate-Chip-Cookies-MyRecipes-240265\"},{\"smallImageUrls\":[\"http://lh6.ggpht.com/Gc2FqRt_Wq1xfloxOYtFtCsiG7m6FL2PVZXSucbxBISwCJOjh4MpKWj-85AqAI4rVDrkX7Z1v5GdPv3N4Y0=s90\",\"http://lh3.ggpht.com/gg5b0ZCAjLBZQJm0GE4KTkz8tZPlChVUTdCodAgZC7-wXqjkvJiY5NmswzWj3moD7z8azEIujC3UugO8y2Dtpw=s90\",\"http://lh3.ggpht.com/vedNz-gjCRjzffZiUZKqmYE2hIu-2SPd-hw6Xu8hFKZkm29aY_l6sWEJex1txxeg5hdepJO2X964Xnu37Gdh5rY=s90\",\"http://lh6.ggpht.com/3iV_Iy8tXcYwJS3RZtxGzr1G-e5R4Gk3L6euKEwm12pxQbxRWcYWEGnI0qZ2sja9b7EZerdZFGmUiSRs4Zpc=s90\"],\"ingredients\":[\"light
+        brown sugar\",\"baking soda\",\"chocolate chips\",\"softened butter\",\"pure
+        vanilla\",\"large eggs\",\"salt\",\"granulated sugar\",\"all-purpose flour\",\"Oreo
+        Cookies\"],\"flavors\":{\"sour\":0.6666666666666666,\"salty\":1.0,\"sweet\":1.0,\"meaty\":0.6666666666666666,\"bitter\":1.0},\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/7jDn0aMKpfydu_XWP-MW3jsnsnycoiNJSTu-9k0dEMc3IV7looE9VAfsKYD36LR_raEIUQcEdVk_cnvvPVUb9jc=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"]},\"totalTimeInSeconds\":null,\"rating\":5,\"recipeName\":\"Itty
+        Bitty Oreo Stuffed Chocolate Chip Cookies\",\"sourceDisplayName\":\"Picky
+        Palate\",\"id\":\"Itty-bitty-oreo-stuffed-chocolate-chip-cookies-334720\"},{\"smallImageUrls\":[\"http://lh3.ggpht.com/3Ymwlkgo78yiyOuX_MVVLmSqxZ197WLvmkyfi5dCcUyVhZoA9TVZvB79jPyWKtP_4DnwsT5CTWEBkZu3pBXlXg=s90\",\"http://lh3.ggpht.com/Cju2pEnrrmOs13L4B5cd4xMYztv0eS-EgDCT3lg6RpW74OjhQkIjR2f-Ua8_GhovxT6pFsI701v4WEvzLmQ=s90\",\"http://lh5.ggpht.com/30gZBHqCwZy-ZsuMTNpA5RvN--3gZOHfVTbiQ8C3HUlKvpxn2qsKHnumGbWEAXOUWqLKovsutLfgSKSg2MGFIA=s90\",\"http://lh3.ggpht.com/VGR7GNXgg_nG30ev_ZwlO3TYg_EU7YQDkEKXsN8oKkq1tqivtBbEUA4Rwvhy-syhDIJ2GkWLn3mhCkUjpgoxYQ=s90\"],\"ingredients\":[\"light
+        brown sugar\",\"baking soda\",\"mini chocol chip\",\"softened butter\",\"kosher
+        salt\",\"large eggs\",\"pure vanilla extract\",\"granulated sugar\",\"all-purpose
+        flour\",\"Oreo Cookies\"],\"flavors\":{\"sour\":0.5,\"salty\":0.5,\"sweet\":1.0,\"meaty\":0.5,\"bitter\":0.16666666666666666},\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/ROUZxcporeOSwCI4f1TMKFeJKi4uj2A9JkPo94yDj-N8y4LxI2PTqNlQljsAMPTr6zQ4yHZHInXsO4XPF0fvYG8=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"]},\"totalTimeInSeconds\":null,\"rating\":5,\"recipeName\":\"Warm
+        Baked Chocolate Chip Cookie Stuffed Oreos\",\"sourceDisplayName\":\"Picky
+        Palate\",\"id\":\"Warm-baked-chocolate-chip-cookie-stuffed-oreos-334311\"},{\"attributes\":{\"course\":[\"Desserts\"]},\"flavors\":{\"sour\":0.6666666666666666,\"salty\":0.6666666666666666,\"sweet\":1.0,\"meaty\":0.6666666666666666,\"bitter\":1.0},\"rating\":3,\"id\":\"oreo-stuffed-chocolate-chip-cookies-MyRecipes-262835\",\"smallImageUrls\":[],\"sourceDisplayName\":\"MyRecipes\",\"totalTimeInSeconds\":1800.0,\"ingredients\":[\"light
+        brown sugar\",\"baking soda\",\"chocolate chips\",\"eggs\",\"softened butter\",\"pure
+        vanilla\",\"salt\",\"granulated sugar\",\"all-purpose flour\"],\"recipeName\":\"oreo-stuffed
+        chocolate chip cookies\"},{\"smallImageUrls\":[\"http://lh3.ggpht.com/x8pMXnGFRQOc0QsJ0sY81d-LBV7hS1dchkCr1xyreVbLHufgHpGU9do9iawsFERODkc1aLsdxtOm0pz6OG1t=s90\"],\"ingredients\":[\"light
+        brown sugar\",\"baking soda\",\"chocolate chips\",\"kosher salt\",\"unsalted
+        butter\",\"large eggs\",\"pure vanilla extract\",\"granulated sugar\",\"all-purpose
+        flour\",\"cream cheese, softened\",\"Oreo Cookies\"],\"flavors\":{\"sour\":0.6666666666666666,\"salty\":0.3333333333333333,\"sweet\":1.0,\"meaty\":0.6666666666666666,\"bitter\":1.0},\"imageUrlsBySize\":{\"90\":\"http://lh5.ggpht.com/FT8KcUU9qRJ_jIRezTbYt_VpQVlhxkeDEybpSqOFfgcha_EBjL2Bbc5DF9UzjwOw60w6JALDVwxOB4YAByqc=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"]},\"totalTimeInSeconds\":2700.0,\"rating\":0,\"recipeName\":\"Oreo
+        Cookie Ball Stuffed Cookies\",\"sourceDisplayName\":\"Picky Palate\",\"id\":\"Oreo-Cookie-Ball-Stuffed-Cookies-479673\"},{\"attributes\":{\"course\":[\"Desserts\"]},\"flavors\":{\"salty\":0.16666666666666666,\"sweet\":0.5,\"meaty\":0.16666666666666666,\"bitter\":0.16666666666666666},\"rating\":3,\"id\":\"Oreo-Stuffed-Chocolate-Chip-Cookies-Food_com-184090\",\"smallImageUrls\":[],\"sourceDisplayName\":\"Food.com\",\"totalTimeInSeconds\":2280.0,\"ingredients\":[\"semi
+        sweet chocolate chips\",\"light brown sugar\",\"baking soda\",\"flour\",\"softened
+        butter\",\"cookies\",\"large eggs\",\"salt\",\"granulated sugar\",\"vanilla
+        extract\"],\"recipeName\":\"Oreo Stuffed Chocolate Chip Cookies\"},{\"smallImageUrls\":[\"http://lh5.ggpht.com/45ReMhkHLwDMLWFO_409x-0zpMz4uw2ZpSbxsNwYvwiCzk4AJKsNlt3uClRDGhhXDl4IpCV0OWs_Dd3Scwiimg=s90\",\"http://lh6.ggpht.com/ro0VE9A2hEw2PwQML9Gn0FXoeKg5yqcSkcYQH8P04tJTnh1m8kckohXGS9AZlv6ZgbDpYfLxrHqF6_qB4xuG=s90\",\"http://lh5.ggpht.com/c0pbKuoBhlpTLYnVuZD-oJ0uDiUnsYJkKjqdaOZ39lg66VlDXQDx5YPzjwTRv7iApBMBCL3ZgdyIl6FywX3o=s90\",\"http://lh5.ggpht.com/cU9EXgGVig5MSNBKgCqdLPe6wtQkFvXC1mxGbA1MHqmhjk2skhbgTNGdp1ngQgZp3YwdZIJs8ABs_HrcqZss=s90\"],\"ingredients\":[\"light
+        brown sugar\",\"baking soda\",\"chocolate chips\",\"softened butter\",\"pure
+        vanilla\",\"large eggs\",\"salt\",\"granulated sugar\",\"all-purpose flour\",\"Oreo
+        Cookies\"],\"flavors\":{\"sour\":0.6666666666666666,\"salty\":1.0,\"sweet\":1.0,\"meaty\":0.6666666666666666,\"bitter\":1.0},\"imageUrlsBySize\":{\"90\":\"http://lh4.ggpht.com/_aQxSEKTP8knn0XJXojl3LUBzVEWBAoEIAiUnTTiY_aXHi40zoFyMoGWmDdol96Z1LogCn_SsJb8JPG-v3537A=s90-c\"},\"attributes\":{\"course\":[\"Desserts\"]},\"totalTimeInSeconds\":null,\"rating\":5,\"recipeName\":\"Oreo
+        Stuffed Cookie Jars and BlogHer Food, Atlanta\",\"sourceDisplayName\":\"Picky
+        Palate\",\"id\":\"Oreo-stuffed-cookie-jars-and-blogher-food_-atlanta-334741\"},{\"attributes\":{\"holiday\":[\"christmas\"]},\"flavors\":{\"sour\":0.8333333333333334,\"salty\":1.0,\"sweet\":1.0,\"meaty\":1.0,\"bitter\":1.0},\"rating\":5,\"id\":\"Collection-of-picky-palate-stuffed-cookies_-334867\",\"smallImageUrls\":[],\"sourceDisplayName\":\"Picky
+        Palate\",\"totalTimeInSeconds\":6300.0,\"ingredients\":[\"butter\",\"semi
+        sweet chocolate chips\",\"light brown sugar\",\"baking soda\",\"chocolate
+        chips\",\"marshmallows\",\"graham cracker\",\"brown sugar\",\"eggs\",\"brownie
+        mix\",\"softened butter\",\"cocoa powder\",\"kosher salt\",\"hershey bar\",\"pure
+        vanilla\",\"large eggs\",\"pure vanilla extract\",\"salt\",\"creamy peanut
+        butter\",\"granulated sugar\",\"all-purpose flour\",\"vanilla\",\"oreo cookies\"],\"recipeName\":\"Collection
+        of Picky Palate Stuffed Cookies!\"}],\"criteria\":{\"excludedIngredients\":null,\"allowedIngredients\":null,\"terms\":null}}"
+    http_version: 
+  recorded_at: Thu, 06 Mar 2014 22:20:27 GMT
+recorded_with: VCR 2.8.0
