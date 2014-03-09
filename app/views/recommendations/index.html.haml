@@ -1,3 +1,10 @@
 - provide(:title, "Eatability of #{@recipe[:name]}")
-%h1 #{@recipe[:name]} get an eatablity rating of #{@recipe[:average_rating]}
+- unless is_plural?(@recipe[:name])
+  - letter = "s"
+%h1 #{@recipe[:name]} get#{letter} an eatability rating of #{@recipe[:average_rating]}
 %h2= @recipe
+- adjusted_rating = 50 - ( 50 - @recipe[:average_rating] ).abs
+%p
+  Poor
+  %input{disabled: "disabled", max: "50", min: "0", name: "points", type: "range", value: adjusted_rating }
+  Good

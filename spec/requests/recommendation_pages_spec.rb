@@ -14,10 +14,23 @@ describe "Recommendation Pages" do
       end
       visit new_rating_path
       find(:xpath, "//input[@id='rating_scale']").set 57
+      click_button "Save"
       visit new_recommendation_path
     end
 
-    describe "make yummly search" do
+    describe "looking up ingredient in table" do
+      before do
+        fill_in "search", with: "sugar"
+        click_button "Search"
+      end
+
+      it { should have_content("Sugar gets an eatability rating of 57") }
+      it { should have_title('Eatability of Sugar') }
+
+
+    end
+
+    describe "using yummly for food lookup" do
       before do
         fill_in "search", with: "Oreo Stuffed Chocolate Chip Cookies"
         VCR.use_cassette('yummlysearch Oreo Stuffed Chocolate Chip Cookies') do
@@ -25,10 +38,8 @@ describe "Recommendation Pages" do
         end
       end
 
-      it { should have_content("Oreo Stuffed Chocolate Chip Cookies get an eatablity rating of 57") }
+      it { should have_content("Oreo Stuffed Chocolate Chip Cookies get an eatability rating of 57") }
       it { should have_title('Eatability of Oreo Stuffed Chocolate Chip Cookies') }
-
-
     end
   end
 end

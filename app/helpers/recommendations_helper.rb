@@ -9,7 +9,12 @@ module RecommendationsHelper
 
   def get_recipe_from_yummly(search_term)
     recipes = fetch_recipes(search_term)
-    choose_recipe(recipes)
+    if recipes.empty?
+      nil
+    else
+      recipe = choose_recipe(recipes)
+      {name: recipe.name, ingredients: recipe.ingredients }
+    end
   end
 
   def name_with_ratings_for(ingredient_name)
@@ -31,4 +36,9 @@ module RecommendationsHelper
       nil
     end
   end
+
+  def is_ingredient?(search_term)
+    Ingredient.where(name: search_term).exists?
+  end
+
 end

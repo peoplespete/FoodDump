@@ -8,5 +8,8 @@ module ApplicationHelper
     recipes[0]
   end
 
+  def is_plural?(str)
+    str.pluralize == str and str.singularize != str
+  end
 
 end
