@@ -31,10 +31,11 @@ class RecommendationsController < ApplicationController
     @recipe[:ingredients].compact!
 
     averages = @recipe[:ingredients].map do |ingredient|
-      # here is where we can add the std dev logic
-      ingredient[:average_rating]
+      valid_average = ingredient[:ratings].size > 1 and ingredient[:ratings].stdev < 20
+      ingredient[:average_rating] if valid_average
     end
-    if averages.size < 2 and !is_ingredient?(search_term)
+    averages.compact!
+    if averages.empty?
       flash[:error] = "Sorry we couldn't find enough information to accurately predict that food's effect on you.  Please try again with a different food."
       redirect_to new_recommendation_path
     else
