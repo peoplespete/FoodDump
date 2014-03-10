@@ -26,8 +26,6 @@ describe "Recommendation Pages" do
 
       it { should have_content("Sugar gets an eatability rating of 57") }
       it { should have_title('Eatability of Sugar') }
-
-
     end
 
     describe "using yummly for food lookup" do

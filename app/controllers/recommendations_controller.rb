@@ -11,12 +11,9 @@ class RecommendationsController < ApplicationController
 
   def index
     search_term = recommendation_params[:search]
-    # search through the ingredients table first and make sure to allow the one rating to get through the if below
-    # and capitalize it too
-
     if is_ingredient?(search_term)
       ingredient = Ingredient.find_by(name: search_term)
-      chosen_recipe = {name: ingredient[:name].capitalize, ingredients: [ ingredient[:name] ]}
+      chosen_recipe = {name: ingredient[:name], ingredients: [ ingredient[:name] ]}
     else
       chosen_recipe = get_recipe_from_yummly(search_term)
       unless chosen_recipe

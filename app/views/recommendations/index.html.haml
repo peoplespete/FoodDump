@@ -1,7 +1,7 @@
-- provide(:title, "Eatability of #{@recipe[:name]}")
+- provide(:title, "Eatability of #{@recipe[:name].titleize}")
 - unless is_plural?(@recipe[:name])
   - letter = "s"
-%h1 #{@recipe[:name]} get#{letter} an eatability rating of #{@recipe[:average_rating]}
+%h1 #{@recipe[:name].titleize} get#{letter} an eatability rating of #{@recipe[:average_rating]}
 %h2= @recipe
 - adjusted_rating = 50 - ( 50 - @recipe[:average_rating] ).abs
 %p
