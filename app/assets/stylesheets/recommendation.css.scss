@@ -1,3 +1,17 @@
 // Place all the styles related to the Recommendation controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+input[type='range'][name='points'] {
+  background: #f71c00;
+  background: -moz-linear-gradient(left, #f71c00 1%, #ebf702 51%, #03e800 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%,#f71c00), color-stop(51%,#ebf702), color-stop(100%,#03e800));
+  background: -webkit-linear-gradient(left, #f71c00 1%,#ebf702 51%,#03e800 100%);
+  background: -o-linear-gradient(left, #f71c00 1%,#ebf702 51%,#03e800 100%);
+  background: -ms-linear-gradient(left, #f71c00 1%,#ebf702 51%,#03e800 100%);
+  background: linear-gradient(to right, #f71c00 1%,#ebf702 51%,#03e800 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f71c00', endColorstr='#03e800',GradientType=1 );
+
+}
+input[type='range'][name='points']::-webkit-slider-thumb {
+
+}

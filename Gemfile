@@ -9,6 +9,7 @@ gem "figaro", "~> 0.7.0"
 gem 'haml-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
+gem 'jquery-turbolinks'
 gem "poltergeist", "~> 1.5.0", group: [:test]
 gem 'rails', '4.0.3'
 gem "rails-footnotes", "~> 3.7.9"

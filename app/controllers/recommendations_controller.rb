@@ -40,6 +40,14 @@ class RecommendationsController < ApplicationController
       redirect_to new_recommendation_path
     else
       @recipe[:average_rating] = averages.sum / averages.size
+      @recipe[:adjusted_rating]  = 50 - ( 50 - @recipe[:average_rating] ).abs
+      if @recipe[:adjusted_rating] > 33
+        image = "smiley.png"
+      elsif @recipe[:adjusted_rating] > 16
+        image = "unsure.png"
+      else
+        image = "sad.png"
+      end
     end
   end
 
