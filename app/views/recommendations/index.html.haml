@@ -1,4 +1,5 @@
 - provide(:title, "Eatability of #{@recipe[:name].titleize}")
+= link_to "Back", new_recommendation_path
 - unless is_plural?(@recipe[:name])
   - letter = "s"
 %h1 #{@recipe[:name].titleize} get#{letter} an eatability rating of #{@recipe[:average_rating]}
