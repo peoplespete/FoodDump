@@ -13,6 +13,7 @@ gem "poltergeist", "~> 1.5.0", group: [:test]
 gem 'rails', '4.0.3'
 gem "rails-footnotes", "~> 3.7.9"
 gem 'rspec-rails', group: [:development, :test]
+gem "ruby-standard-deviation", "~> 2.0.0"
 gem 'sass-rails', '~> 4.0.0'
 gem 'selenium-webdriver', group: [:test]
 gem 'spork-rails', github: 'sporkrb/spork-rails', group: [:development, :test]
