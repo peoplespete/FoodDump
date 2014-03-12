@@ -1,8 +1,26 @@
-- provide(:title, 'Enter food')
-= link_to "Back", root_url
-= form_for(@ingredient) do |f|
-  = render 'shared/error_messages', object: f.object
-  = f.label :search
-  = f.text_field :search, placeholder: "Search for your food..."
-  = f.submit "Search", class: "btn btn-large btn-primary"
+.row
+  - provide(:title, 'Enter food')
+  = link_to "Back", root_url, class: "button tiny back"
+  .row.clear
+    .small-12.columns.center
+      %h2 Add the food you just ate
+  .row
+  = form_for(@ingredient) do |f|
+    = render 'shared/error_messages', object: f.object
+    .row
+      .small-offset-4.small-4.columns
+        .hide
+          = f.label :search
+        = f.text_field :search, placeholder: "Search for your food..."
+      .small-4.columns
+    .row
+      .small-offset-4.small-4.columns
+        .hide
+          = f.label "Simple Food?"
+        %abbr.inline{ title: "These foods don't have recipes.  For example: apple, milk, etc." }
+          .explainer.inline Simple Food?
+        = f.check_box :is_ingredient, class: "inline"
+      .small-4.columns
+    .row
+      = f.submit "Search", class: "button small"
 

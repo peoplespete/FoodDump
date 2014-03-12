@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require turbolinks
 //= require jquery.turbolinks
 //= require_tree .
@@ -48,3 +49,4 @@ function rating_scale_change(){
   }
   document.styleSheets[0].addRule("input[type='range'][name='rating[scale]']::-webkit-slider-thumb", 'background-image: url(' + image + ')');
 }
+$(function(){ $(document).foundation(); });

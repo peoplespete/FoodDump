@@ -10,6 +10,11 @@ class RecommendationsController < ApplicationController
   end
 
   def index
+    if recommendation_params[:search] == ""
+      flash[:alert] = "Please try again with a search term"
+      redirect_to new_recommendation_path
+      return
+    end
     search_term = recommendation_params[:search]
     if is_ingredient?(search_term)
       ingredient = Ingredient.find_by(name: search_term)
@@ -17,7 +22,7 @@ class RecommendationsController < ApplicationController
     else
       chosen_recipe = get_recipe_from_yummly(search_term)
       unless chosen_recipe
-        flash[:error] = "Sorry we couldn't find that food, please try again with a different search term"
+        flash[:alert] = "Sorry we couldn't find that food, please try again with a different search term"
         redirect_to new_recommendation_path
         return
       end
@@ -36,14 +41,14 @@ class RecommendationsController < ApplicationController
     end
     averages.compact!
     if averages.empty?
-      flash[:error] = "Sorry we couldn't find enough information to accurately predict that food's effect on you.  Please try again with a different food."
+      flash[:alert] = "Sorry we couldn't find enough information to accurately predict that food's effect on you.  Please try again with a different food."
       redirect_to new_recommendation_path
     else
       @recipe[:average_rating] = averages.sum / averages.size
-      @recipe[:adjusted_rating]  = 50 - ( 50 - @recipe[:average_rating] ).abs
-      if @recipe[:adjusted_rating] > 33
+      @recipe[:adjusted_rating]  = 2 * (50 - ( 50 - @recipe[:average_rating] ).abs)
+      if @recipe[:adjusted_rating] > 66
         image = "smiley.png"
-      elsif @recipe[:adjusted_rating] > 16
+      elsif @recipe[:adjusted_rating] > 33
         image = "unsure.png"
       else
         image = "sad.png"

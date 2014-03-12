@@ -1,10 +1,14 @@
 - provide(:title, "Eatability of #{@recipe[:name].titleize}")
-= link_to "Back", new_recommendation_path
-- unless is_plural?(@recipe[:name])
-  - letter = "s"
-%h1 #{@recipe[:name].titleize} get#{letter} an eatability rating of #{@recipe[:average_rating]}
-%h2= @recipe
-%p
-  Poor
-  %input{disabled: "disabled", max: "50", min: "0", name: "points", type: "range", value: @recipe[:adjusted_rating]}
-  Good
+.row
+  = link_to "Back", new_recommendation_path, class: "button tiny back"
+  - unless is_plural?(@recipe[:name])
+    - letter = "s"
+  .row.clear
+    %h1 #{@recipe[:name].titleize} get#{letter} an eatability rating of #{@recipe[:adjusted_rating]}
+  .row
+    .small-2.columns
+      .graph_label Poor
+    .small-8.columns
+      %input{disabled: "disabled", max: "100", min: "0", name: "points", type: "range", value: @recipe[:adjusted_rating]}
+    .small-2.columns
+      .graph_label Good

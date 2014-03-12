@@ -19,7 +19,7 @@ class RatingsController < ApplicationController
 
       flash[:success] = "Rating of #{rating} Added!"
     else
-      flash[:error] = "Sorry we couldn't add that rating, please try again with a different rating"
+      flash[:alert] = "Sorry we couldn't add that rating, please try again with a different rating"
     end
 
     redirect_to root_url

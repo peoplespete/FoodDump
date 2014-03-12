@@ -1,12 +1,19 @@
 - provide(:title, 'Rate your BM')
-= link_to "Back", root_url
-= form_for(@rating) do |f|
-  = render 'shared/error_messages', object: f.object
+.row
+  = link_to "Back", root_url, class: "button tiny back"
+.row.clear
+  %h2 Rate your bowel movement
+  = form_for(@rating) do |f|
+    = render 'shared/error_messages', object: f.object
 
-  = f.label :scale
-  Loose Stool
-  = f.range_field :scale, :min=>0, :max=>100
-  Hard Stool
+    = f.label :scale, class: "hide"
+    .row
+      .small-2.columns
+        .graph_label Loose Stool
+      .small-8.columns
+        = f.range_field :scale, :min=>0, :max=>100
+      .small-2.columns
+        .graph_label Hard Stool
 
-  = f.submit "Save", class: "btn btn-large btn-primary"
+    = f.submit "Save", class: "button save_button"
 

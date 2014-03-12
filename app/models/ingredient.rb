@@ -6,4 +6,7 @@ class Ingredient < ActiveRecord::Base
   def search
   end
 
+  def is_ingredient
+  end
+
 end

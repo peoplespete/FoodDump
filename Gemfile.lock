@@ -39,8 +39,6 @@ GEM
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
-    bootstrap-sass (3.1.1.0)
-      sass (~> 3.2)
     builder (3.1.4)
     capybara (2.2.1)
       mime-types (>= 1.16)
@@ -75,6 +73,9 @@ GEM
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
+    foundation-rails (5.2.0.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     haml (4.0.5)
       tilt
     haml-rails (0.5.3)
@@ -207,11 +208,11 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors
-  bootstrap-sass (~> 3.1.1.0)
   capybara
   coffee-rails (~> 4.0.0)
   factory_girl_rails (= 4.2.0)
   figaro (~> 0.7.0)
+  foundation-rails
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails

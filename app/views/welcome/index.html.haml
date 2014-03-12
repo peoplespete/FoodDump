@@ -1,7 +1,10 @@
 - provide(:title, 'Food Dump')
-%h1 FoodDump
-%p what's it all about?
-= link_to "New Food", new_ingredient_path
-= link_to "New Poop", new_rating_path
-= link_to "New Recommendation", new_recommendation_path
+.row
+  %h1.title Food Dump
+  .row
+    =image_tag "digestive_system.png", id: "logo"
+    = link_to "New Food", new_ingredient_path, class: "button large absolute top_button"
+    = link_to "New Poop", new_rating_path, class: "button large absolute top_button"
+    .row
+      = link_to "New Recommendation", new_recommendation_path, class: "button large absolute bottom_button"
 

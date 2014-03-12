@@ -1,7 +1,15 @@
 - provide(:title, 'Enter food')
-= link_to "Back", root_url
-= form_tag("/recommendations", method: "post") do
-  = label_tag :search
-  = text_field_tag :search, nil, placeholder: "Search for your food..."
-  = submit_tag "Search", class: "btn btn-large btn-primary"
-
+.row
+  = link_to "Back", root_url, class: "button tiny back"
+  .row.clear
+    %h1 Should you eat it?
+    = form_tag("/recommendations", method: "post") do
+      .row
+        .hide
+          = label_tag :search
+      .row
+        .small-offset-4.small-4.columns
+          = text_field_tag :search, nil, placeholder: "Search for your food..."
+        .small-4.columns
+      .row
+        = submit_tag "Search", class: "button"
