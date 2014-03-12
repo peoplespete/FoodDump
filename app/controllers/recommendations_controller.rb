@@ -46,13 +46,6 @@ class RecommendationsController < ApplicationController
     else
       @recipe[:average_rating] = averages.sum / averages.size
       @recipe[:adjusted_rating]  = 2 * (50 - ( 50 - @recipe[:average_rating] ).abs)
-      if @recipe[:adjusted_rating] > 66
-        image = "smiley.png"
-      elsif @recipe[:adjusted_rating] > 33
-        image = "unsure.png"
-      else
-        image = "sad.png"
-      end
     end
   end
 

@@ -26,9 +26,9 @@ function init(){
 function choose_recommendation_button(){
   var adjusted_rating = $("input[type='range'][name='points']").val();
   var image = "";
-  if(adjusted_rating > 33){
+  if(adjusted_rating > 66){
     image = "smiley.png";
-  }else if( adjusted_rating > 16){
+  }else if( adjusted_rating > 33){
     image = "unsure.png";
   }else{
     image = "sad.png";
