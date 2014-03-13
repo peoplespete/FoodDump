@@ -38,14 +38,14 @@ How To Use
 -----------
 This web app is designed for anyone who suffers from a digestive disease.
 
-1. Every time you eat something, click `Food Log`.
-2. Add the food you just ate, checking the `Simple Food?` box if the food is itself an ingredient (examples: milk, apple, broccoli, etc.)
+  1. Every time you eat something, click `Food Log`.
+  2. Add the food you just ate, checking the `Simple Food?` box if the food is itself an ingredient (examples: milk, apple, broccoli, etc.)
 
-1. Every time you have a bowel movement, click `Stool Status`.
-2. Use the slider to rate the quality of your stool from loose to normal to hard.
+  1. Every time you have a bowel movement, click `Stool Status`.
+  2. Use the slider to rate the quality of your stool from loose to normal to hard.
 
-1. If you would like a recommendation on how a food may affect your digestive system, click `Crystal Ball`.
-2. Add the food you are contemplating eating and use the result to help you decide what to eat. ^
+  1. If you would like a recommendation on how a food may affect your digestive system, click `Crystal Ball`.
+  2. Add the food you are contemplating eating and use the result to help you decide what to eat. ^
 
 ^ The prediction abilities of the Crystal Ball are directly proportional to how much data is in the database.  The more food log and stool statuses you complete, the more accurate your Crystall Ball will be.
 
