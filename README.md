@@ -52,4 +52,4 @@ Additional Resources
 --------------------
 This app was built using HAML, SASS, JS, and a Ruby on Rails back end.  Recipe information provided by [Yummly](https://developer.yummly.com/).
 
-![alt tag](/app/assets/images/digestive_system.png =300x)
+![alt tag](/app/assets/images/digestive_system.png)
