@@ -7,14 +7,16 @@ describe "Recommendation Pages" do
 
   describe "getting a recommendation" do
     before do
-      visit new_ingredient_path
-      fill_in "ingredient_search", with: "Crave-Worthy Sugar Cookies"
-      VCR.use_cassette('yummlysearch Crave-Worthy Sugar Cookies') do
-        click_button "Search"
+      2.times do
+        visit new_ingredient_path
+        fill_in "ingredient_search", with: "Crave-Worthy Sugar Cookies"
+        VCR.use_cassette('yummlysearch Crave-Worthy Sugar Cookies') do
+          click_button "Add"
+        end
+        visit new_rating_path
+        find(:xpath, "//input[@id='rating_scale']").set 57
+        click_button "Save"
       end
-      visit new_rating_path
-      find(:xpath, "//input[@id='rating_scale']").set 57
-      click_button "Save"
       visit new_recommendation_path
     end
 
@@ -23,9 +25,10 @@ describe "Recommendation Pages" do
         fill_in "search", with: "sugar"
         click_button "Search"
       end
-
-      it { should have_content("Sugar gets an eatability rating of 57") }
-      it { should have_title('Eatability of Sugar') }
+      it { should_not have_content("Sorry we couldn't find enough information")}
+      it { should_not have_content("Sorry we couldn't find that food")}
+      it { should have_content("Sugar gets an eatability rating of 86") }
+      it { should have_title("Eatability of Sugar") }
     end
 
     describe "using yummly for food lookup" do
@@ -36,8 +39,8 @@ describe "Recommendation Pages" do
         end
       end
 
-      it { should have_content("Oreo Stuffed Chocolate Chip Cookies get an eatability rating of 57") }
-      it { should have_title('Eatability of Oreo Stuffed Chocolate Chip Cookies') }
+      it { should have_content("Oreo Stuffed Chocolate Chip Cookies get an eatability rating of 86") }
+      it { should have_title("Eatability of Oreo Stuffed Chocolate Chip Cookies") }
     end
   end
 end

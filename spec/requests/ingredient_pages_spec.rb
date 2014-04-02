@@ -12,7 +12,7 @@ describe "Ingredient Pages" do
       before { fill_in "ingredient_search", with: "Mashed Potatoes" }
       it "should add recipe ingredients to db" do
         VCR.use_cassette('yummly search mashed potatoes') do
-          expect { click_button "Search" }.to change(Ingredient, :count)
+          expect { click_button "Add" }.to change(Ingredient, :count)
         end
       end
 
@@ -20,7 +20,7 @@ describe "Ingredient Pages" do
         before do
           fill_in "ingredient_search", with: "Fried Apple Pie"
           VCR.use_cassette('yummly search fried apple pie') do
-            click_button "Search"
+            click_button "Add"
           end
         end
 
@@ -32,12 +32,12 @@ describe "Ingredient Pages" do
         before do
           fill_in "ingredient_search", with: "4fj74f"
           VCR.use_cassette('yummly search 4fj74f') do
-            click_button "Search"
+            click_button "Add"
           end
         end
         error_message = "Sorry we couldn't find that food, please try again with a different search term"
         it { should have_content(error_message) }
-        it { should have_title('Food Dump') }
+        it { should have_title('Enter food') }
       end
     end
   end
