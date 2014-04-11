@@ -7,6 +7,7 @@ FoodDump::Application.routes.draw do
   resources :ingredients, only: [:new, :create]
   resources :ratings, only: [:new, :create]
   resources :recommendations, only: [:new, :create, :index]
+  devise_for :users
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

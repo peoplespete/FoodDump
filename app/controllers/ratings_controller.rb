@@ -1,4 +1,5 @@
 class RatingsController < ApplicationController
+  before_action :authenticate_user!
 
   def new
     @rating = Rating.new
@@ -9,10 +10,10 @@ class RatingsController < ApplicationController
     rating = rating_params[:scale].to_i
     if rating.to_s == rating_params[:scale]
       # this verifies that the rating was really a number (ruby converts 'r'.to_i to 0)
-      @ingredients = Ingredient.where(pending: true)
+      @ingredients = Ingredient.where(pending: true, user_id: current_user.id)
 
       @ingredients.each do |ingredient|
-        Rating.create(rating: rating, ingredient_id: ingredient.id)
+        Rating.create(rating: rating, ingredient_id: ingredient.id, user_id: current_user.id)
         ingredient.pending = false
         ingredient.save
       end

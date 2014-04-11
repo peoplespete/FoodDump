@@ -1,5 +1,7 @@
 - provide(:title, 'Food Dump')
 .row
+  = link_to "Sign out", destroy_user_session_path, :method => :delete
+.row
   %h1.title Food Dump
   .row
     =image_tag "digestive_system.png", id: "logo"

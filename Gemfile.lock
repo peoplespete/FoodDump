@@ -36,6 +36,7 @@ GEM
     addressable (2.3.5)
     arel (4.0.2)
     atomic (1.1.15)
+    bcrypt (3.1.7)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -59,6 +60,12 @@ GEM
     coffee-script-source (1.7.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
+    devise (3.2.4)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.0.2)
@@ -106,6 +113,7 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    orm_adapter (0.5.0)
     poltergeist (1.5.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -191,6 +199,8 @@ GEM
       rack
       raindrops (~> 0.7)
     vcr (2.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
     webmock (1.17.4)
       addressable (>= 2.2.7)
       crack (>= 0.3.2)
@@ -210,6 +220,7 @@ DEPENDENCIES
   better_errors
   capybara
   coffee-rails (~> 4.0.0)
+  devise (~> 3.2.4)
   factory_girl_rails (= 4.2.0)
   figaro (~> 0.7.0)
   foundation-rails

@@ -1,8 +1,22 @@
 class IngredientsController < ApplicationController
   include IngredientsHelper
+  before_action :authenticate_user!
 
   def new
-    @ingredient = Ingredient.new
+    # @user = User.find(current_user)
+    # @user.ingredients.build(params[:user][:location])
+    # if @user.save
+    #   flash[:notice] = "Ingredient created successfully"
+    #   redirect_to user_ingredients_path(@user)
+    # else
+    #   render :new
+    # end
+    p "ID COMING RIGHT UPpppppppppppppppppppp"
+    p current_user.id
+
+
+    # @ingredient = Ingredient.new(:user => current_user)
+    @ingredient = Ingredient.new()
   end
 
   def create

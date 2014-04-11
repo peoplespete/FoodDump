@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'better_errors'
 gem 'capybara', group: [:test]
 gem 'coffee-rails', '~> 4.0.0'
+gem 'devise', '~> 3.2.4'
 gem 'factory_girl_rails', '4.2.0', group: [:test]
 gem "figaro", "~> 0.7.0"
 gem 'foundation-rails'

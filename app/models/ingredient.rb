@@ -1,6 +1,7 @@
 class Ingredient < ActiveRecord::Base
+  belongs_to :user, dependent: :destroy
   has_many :ratings
-  validates :name, uniqueness: true
+  # validates :name, uniqueness: true
 
 
   def search

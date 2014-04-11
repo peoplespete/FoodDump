@@ -1,5 +1,6 @@
 class RecommendationsController < ApplicationController
   include RecommendationsHelper
+  before_action :authenticate_user!
 
   def new
     @recommendation = "Recommendation"
@@ -17,7 +18,7 @@ class RecommendationsController < ApplicationController
     end
     search_term = recommendation_params[:search]
     if is_ingredient?(search_term)
-      ingredient = Ingredient.find_by(name: search_term)
+      ingredient = Ingredient.find_by(name: search_term, user_id: current_user.id)
       chosen_recipe = {name: ingredient[:name], ingredients: [ ingredient[:name] ]}
     else
       chosen_recipe = get_recipe_from_yummly(search_term)
@@ -36,7 +37,7 @@ class RecommendationsController < ApplicationController
     @recipe[:ingredients].compact!
 
     averages = @recipe[:ingredients].map do |ingredient|
-      valid_average = ingredient[:ratings].size > 1 and ingredient[:ratings].stdev < 20
+      valid_average = ingredient[:ratings].size > 1 && ingredient[:ratings].stdev < 20
       ingredient[:average_rating] if valid_average
     end
     averages.compact!

@@ -21,11 +21,11 @@ module RecommendationsHelper
     # { name: ingredient_name, average_rating: 45, ratings: [45,34,56] }
 
     # get id from ingredients table
-    ingredient = Ingredient.find_by(name: ingredient_name)
+    ingredient = Ingredient.find_by(name: ingredient_name, user_id: current_user.id)
     if ingredient
       ingredient_id = ingredient.id
       # get ratings from ratings table for that ingred_id
-      ratings = Rating.select(:rating).where(ingredient_id: ingredient_id)
+      ratings = Rating.where(ingredient_id: ingredient_id, user_id: current_user.id)
       ratings = ratings.map do |rating|
         rating[:rating]
       end
@@ -38,7 +38,7 @@ module RecommendationsHelper
   end
 
   def is_ingredient?(search_term)
-    Ingredient.where(name: search_term).exists?
+    Ingredient.where(name: search_term, user_id: current_user.id).exists?
   end
 
 end
