@@ -11,7 +11,7 @@ class IngredientsController < ApplicationController
     # else
     #   render :new
     # end
-    p "ID COMING RIGHT UPpppppppppppppppppppp"
+    p "ID COMING RIGHT UP"
     p current_user.id
 
 
