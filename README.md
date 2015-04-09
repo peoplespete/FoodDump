@@ -19,11 +19,12 @@ Add application.yml file:
 ```
 touch config/application.yml
 ```
-Add your own [Yummly](https://developer.yummly.com/) keys in the application.yml file you just created:
+Add your own [Yummly](https://developer.yummly.com/) and [Food Essentials](http://developer.foodessentials.com/) keys in the application.yml file you just created:
 
 ```
 YUMMLY_APP_ID : 5j353d43
 YUMMLY_KEY : erf49d23c9a634344f5e1kk3k42314i4
+FOOD_ESSENTIALS : 8234kdsdf0w9fwj24s0sd9fsf
 ```
 Start the app:
 
@@ -52,6 +53,6 @@ This web app is designed for anyone who suffers from a digestive disease.
 
 Additional Resources
 --------------------
-This app was built using HAML, SASS, JS, and a Ruby on Rails back end.  Recipe information provided by [Yummly](https://developer.yummly.com/).
+This app was built using HAML, SASS, JS, and a Ruby on Rails back end.  Recipe and ingredient information provided by [Yummly](https://developer.yummly.com/) and [Food Essentials](http://developer.foodessentials.com/).
 
 ![alt tag](/app/assets/images/digestive_system.png)
