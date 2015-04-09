@@ -36,6 +36,7 @@ rerun.txt
 pickle-email-*.html
 .project
 config/initializers/secret_token.rb
+Gemfile.lock
 
 # Ignore application configuration
 /config/application.yml

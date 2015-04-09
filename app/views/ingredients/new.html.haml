@@ -19,7 +19,15 @@
           = f.label "Simple Food?"
         %abbr.inline{ title: "These foods don't have recipes.  For example: apple, milk, etc." }
           .explainer.inline Simple Food?
-        = f.check_box :is_ingredient, class: "inline"
+        = f.radio_button :source, "simple",class: "inline"
+      .small-4.columns
+    .row
+      .small-offset-4.small-4.columns
+        .hide
+          = f.label "Store Bought?"
+        %abbr.inline{ title: "These processed or prepared foodsare bought in a grocery store.  For example: oreos, lean cuisine, etc." }
+          .explainer.inline Store Bought?
+        = f.radio_button :source, "grocery", class: "inline"
       .small-4.columns
     .row
       = f.submit "Add", class: "button small"

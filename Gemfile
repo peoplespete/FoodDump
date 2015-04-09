@@ -1,17 +1,20 @@
 source 'https://rubygems.org'
 
+# IF VERSIONS START GETTING OUT OF WACK, REVERT BACK TO VERSIONS IN MARCH 2014 and BUNDLE UPDATE
 gem 'better_errors'
 gem 'capybara', group: [:test]
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise', '~> 3.2.4'
 gem 'factory_girl_rails', '4.2.0', group: [:test]
 gem "figaro", "~> 0.7.0"
-gem 'foundation-rails'
+gem 'foundation-rails', '5.2.2.0'
 gem 'haml-rails'
+gem 'httparty', '~> 0.13.3'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem "poltergeist", "~> 1.5.0", group: [:test]
+gem 'pry', '~> 0.10.1'
 gem 'rails', '4.0.3'
 gem "rails-footnotes", "~> 3.7.9"
 gem 'rspec-rails', group: [:development, :test]

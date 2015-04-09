@@ -32,7 +32,7 @@ class RecommendationsController < ApplicationController
     @recipe = {}
     @recipe[:name] = chosen_recipe[:name]
     @recipe[:ingredients] = chosen_recipe[:ingredients].map do |ingredient|
-      name_with_ratings_for(ingredient)
+      name_with_ratings_for(ingredient) rescue nil
     end
     @recipe[:ingredients].compact!
 
