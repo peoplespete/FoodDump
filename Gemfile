@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # IF VERSIONS START GETTING OUT OF WACK, REVERT BACK TO VERSIONS IN MARCH 2014 and BUNDLE UPDATE
+gem 'awesome_print'
 gem 'better_errors'
 gem 'capybara', group: [:test]
 gem 'coffee-rails', '~> 4.0.0'
