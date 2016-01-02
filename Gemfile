@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem "poltergeist", "~> 1.5.0", group: [:test]
+gem 'pg'
 gem 'pry', '~> 0.10.1'
 gem 'rails', '4.0.3'
 gem "rails-footnotes", "~> 3.7.9"
