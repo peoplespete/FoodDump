@@ -24,7 +24,6 @@ gem "ruby-standard-deviation", "~> 2.0.0"
 gem 'sass-rails', '~> 4.0.0'
 gem 'selenium-webdriver', group: [:test]
 gem 'spork-rails', github: 'sporkrb/spork-rails', group: [:development, :test]
-gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'unicorn'
