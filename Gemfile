@@ -5,7 +5,7 @@ gem 'awesome_print'
 gem 'better_errors'
 gem 'capybara', group: [:test]
 gem 'coffee-rails', '~> 4.0.0'
-gem 'devise', '~> 3.2.4'
+gem 'devise', '~> 3.4.0'
 gem 'factory_girl_rails', '4.2.0', group: [:test]
 gem 'figaro', '~> 0.7.0'
 gem 'foundation-rails', '5.2.2.0'
@@ -17,7 +17,7 @@ gem 'jquery-turbolinks'
 gem 'poltergeist', '~> 1.5.0', group: [:test]
 gem 'pg'
 gem 'pry', '~> 0.10.1'
-gem 'rails', '4.0.3'
+gem 'rails', '4.2.5'
 gem 'rails-footnotes', '~> 3.7.9'
 gem 'rails_12factor', group: [:production]
 gem 'rspec-rails', group: [:development, :test]
