@@ -37,7 +37,7 @@ class RecommendationsController < ApplicationController
     @recipe[:ingredients].compact!
 
     averages = @recipe[:ingredients].map do |ingredient|
-      valid_average = ingredient[:ratings].size > 1 && ingredient[:ratings].stdev < 20
+      valid_average = ingredient[:ratings].size > 1 && ingredient[:ratings].stdev < 2
       ingredient[:average_rating] if valid_average
     end
     averages.compact!
@@ -46,7 +46,6 @@ class RecommendationsController < ApplicationController
       redirect_to new_recommendation_path
     else
       @recipe[:average_rating] = averages.sum / averages.size
-      @recipe[:adjusted_rating]  = 2 * (50 - ( 50 - @recipe[:average_rating] ).abs)
     end
   end
 

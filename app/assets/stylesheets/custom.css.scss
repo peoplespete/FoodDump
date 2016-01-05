@@ -1,11 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Flavors);
-@import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
-
 body{
   background: #211c19;
   color: #baaeae;
   text-align: center;
-  font-family: 'Hammersmith One', sans-serif;
 
   #registration{
     margin-top: 20px;
@@ -16,36 +12,18 @@ body{
     font-size: 5em;
   }
 
-  h1, h2{
-    font-family: 'Flavors', cursive;
+  h1, h2, h3, h4, h5, h6{
     color: #baaeae;
-  }
-
-  p{
-
   }
 
   .save_button{
     margin-top: 20px;
   }
 
-  #logo{
-    position: absolute;
-    z-index: -1;
-    margin-left: -150px;
-    height: 500px;
-    width: 290px;
-  }
-
   .top_button{
     margin-right: 30px;
     margin-left: 30px;
     width: 180px;
-  }
-
-  .bottom_button{
-    margin-top: 425px;
-
   }
 
   .absolute{
@@ -64,51 +42,7 @@ body{
     display: inline;
   }
 
-  .graph_label{
-    color: #ccc;
-    font-family: 'Hammersmith One', sans-serif;
-    font-size: 1.3em;
+  #rating_scale{
+    width: 10%;
   }
-
-  .explainer{
-    color: #ccc;
-    font-family: 'Hammersmith One', sans-serif;
-    font-size: 1.3em;
-  }
-
-  #yummly_logo{
-    float: right;
-    height: 60px;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  #pete_logo{
-    float: right;
-    height: 60px;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-
-  input[type='text']{
-    color: #000;
-  }
-
-  input[type='range']{
-  -webkit-appearance: none !important;
-
-    height: 10px;
-    width: 100%;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-  }
-  input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance: none !important;
-    background-size: 100% 100%;
-    height:40px;
-    width:40px;
-  }
-
 }

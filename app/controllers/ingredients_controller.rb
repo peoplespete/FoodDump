@@ -3,25 +3,10 @@ class IngredientsController < ApplicationController
   before_action :authenticate_user!
 
   def new
-    # @user = User.find(current_user)
-    # @user.ingredients.build(params[:user][:location])
-    # if @user.save
-    #   flash[:notice] = "Ingredient created successfully"
-    #   redirect_to user_ingredients_path(@user)
-    # else
-    #   render :new
-    # end
-
-    p "ID COMING RIGHT UP"
-    p current_user.id
-
-
-    # @ingredient = Ingredient.new(:user => current_user)
     @ingredient = Ingredient.new()
   end
 
   def create
-
     if ingredient_params[:search] == ""
       flash[:alert] = "Please try again with a search term"
       redirect_to new_ingredient_path

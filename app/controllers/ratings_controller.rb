@@ -6,22 +6,18 @@ class RatingsController < ApplicationController
   end
 
   def create
-    # go ahead and make the rating for all pending ingredients
     rating = rating_params[:scale].to_i
-    if rating.to_s == rating_params[:scale]
-      # this verifies that the rating was really a number (ruby converts 'r'.to_i to 0)
-      @ingredients = Ingredient.where(pending: true, user_id: current_user.id)
+    Dump.create(rating: rating)
 
-      @ingredients.each do |ingredient|
-        Rating.create(rating: rating, ingredient_id: ingredient.id, user_id: current_user.id)
-        ingredient.pending = false
-        ingredient.save
-      end
+    @ingredients = Ingredient.where(pending: true, user_id: current_user.id)
 
-      flash[:success] = "Rating of #{rating} Added!"
-    else
-      flash[:alert] = "Sorry we couldn't add that rating, please try again with a different rating"
+    @ingredients.each do |ingredient|
+      Rating.create(rating: rating, ingredient_id: ingredient.id, user_id: current_user.id)
+      ingredient.pending = false
+      ingredient.save
     end
+
+    flash[:success] = "Rating of #{rating} Added!"
 
     redirect_to root_url
   end

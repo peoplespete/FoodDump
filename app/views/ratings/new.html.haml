@@ -8,12 +8,9 @@
 
     = f.label :scale, class: "hide"
     .row
-      .small-2.columns
-        .graph_label Loose Stool
-      .small-8.columns
-        = f.range_field :scale, :min=>0, :max=>100
-      .small-2.columns
-        .graph_label Hard Stool
+      %h4.left Loose Stool (0) <==> Normal Stool (10)
+    .row
+      = f.number_field :scale, :min=>0, :max=>100
 
     = f.submit "Save", class: "button save_button"
 
