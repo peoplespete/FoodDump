@@ -3,7 +3,7 @@ module IngredientsHelper
   def add_ingredients_to_database(ingredients)
     ingredients.each do |ingredient|
       ingredient = ingredient.strip.gsub("organic","").downcase
-      Food.create(name: ingredient)
+      Food.create(name: ingredient, user_id: current_user.id)
       found_ingredient = Ingredient.find_by(name: ingredient, user_id: current_user.id)
       if found_ingredient
         found_ingredient.pending = true

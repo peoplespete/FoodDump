@@ -7,7 +7,7 @@ class RatingsController < ApplicationController
 
   def create
     rating = rating_params[:scale].to_i
-    Dump.create(rating: rating)
+    Dump.create(rating: rating, user_id: current_user.id)
 
     @ingredients = Ingredient.where(pending: true, user_id: current_user.id)
 
