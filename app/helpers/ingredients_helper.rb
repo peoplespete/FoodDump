@@ -3,7 +3,7 @@ module IngredientsHelper
 
   def add_ingredients_to_database(ingredients)
     ingredients.each do |ingredient|
-      ingredient = ingredient.strip.gsub("organic","")
+      ingredient = ingredient.strip.gsub("organic","").downcase
       puts "adding #{ingredient} to DB..."
       found_ingredient = Ingredient.find_by(name: ingredient, user_id: current_user.id)
       # ADD HERE TO A NEW MODEL FOOD

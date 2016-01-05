@@ -10,7 +10,7 @@
     .row
       %h4.left Loose Stool (0) <==> Normal Stool (10)
     .row
-      = f.number_field :scale, :min=>0, :max=>100
+      = f.text_field :scale, :min=>0, :max=>100
 
     = f.submit "Save", class: "button save_button"
 
