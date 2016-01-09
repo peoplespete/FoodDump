@@ -1,4 +1,4 @@
 class Dump < ActiveRecord::Base
-  belongs_to :user, dependent: :destroy
+  belongs_to :user
   validates :rating, numericality: { only_integer: true }
 end
