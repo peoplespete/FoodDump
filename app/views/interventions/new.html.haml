@@ -1,0 +1,15 @@
+.row
+  - provide(:title, 'Enter Intervention')
+  = link_to "Back", root_url, class: "button tiny back"
+  .row.clear
+    .small-12.columns.center
+      %h2 Add the intervention code
+  .row
+  = simple_form_for @intervention do |f|
+    .row
+      .small-offset-4.small-4.columns
+        .hide
+        = f.input :code
+      .small-4.columns
+        = f.button :submit, "Add", class: "button small"
+

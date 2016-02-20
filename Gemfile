@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # IF VERSIONS START GETTING OUT OF WACK, REVERT BACK TO VERSIONS IN MARCH 2014 and BUNDLE UPDATE
 gem 'awesome_print'
 gem 'better_errors'
-gem 'capybara', group: [:test]
+
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise', '~> 3.4.0'
 gem 'factory_girl_rails', '4.2.0', group: [:test]
@@ -24,6 +24,7 @@ gem 'rspec-rails', group: [:development, :test]
 gem 'ruby-standard-deviation', '~> 2.0.0'
 gem 'sass-rails', '~> 4.0.0'
 gem 'selenium-webdriver', group: [:test]
+gem 'simple_form'
 gem 'spork-rails', github: 'sporkrb/spork-rails', group: [:development, :test]
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
